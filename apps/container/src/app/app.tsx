@@ -18,15 +18,15 @@ export function App() {
           <Link to="/">Home</Link>
         </li>
         <li>
-          <Link to="/module3">Module3</Link>
-        </li>
-
-        <li>
           <Link to="/module1">Module1</Link>
         </li>
 
         <li>
           <Link to="/module2">Module2</Link>
+        </li>
+
+        <li>
+          <Link to="/module3">Module3</Link>
         </li>
       </ul>
       <Routes>
