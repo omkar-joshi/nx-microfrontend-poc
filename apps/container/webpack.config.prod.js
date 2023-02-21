@@ -24,9 +24,9 @@ const prodConfig = {
    * ]
    */
   remotes: [
-    ['module1', 'http://localhost:4201/'],
-    ['module2', 'http://localhost:4202/'],
-    ['module3', 'http://localhost:4203/'],
+    ['module1', 'https://nx-mfe-module1.netlify.app/'],
+    ['module2', 'https://nx-mfe-module2.netlify.app/'],
+    ['module3', 'https://nx-mfe-module3.netlify.app/'],
   ],
 };
 

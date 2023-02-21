@@ -1,0 +1,39 @@
+# .github/workflows/netlify.yml
+name: Build and Deploy module1 to Netlify
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'apps/module1/**'
+
+jobs:
+  build:
+    runs-on: ubuntu-18.04
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v3
+        with:
+          node-version: '16'
+
+      - name: Install packages
+        run: rm -rf node_modules && yarn install
+
+      - name: Install packages
+        run: yarn nx build module1
+
+      - name: Deploy module1 to Netlify
+        uses: nwtgck/actions-netlify@v1.2
+        with:
+          publish-dir: './dist/apps/module1'
+          production-branch: main
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          deploy-message: "Deploy module1 from GitHub Actions"
+          enable-pull-request-comment: false
+          enable-commit-comment: true
+          overwrites-pull-request-comment: false
+          netlify-config-path: './apps/module1/src/netlify.toml'
+        env:
+          NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
+          NETLIFY_SITE_ID: ${{ secrets.NETLIFY_MODULE1_SITE_ID }}
+        timeout-minutes: 1
