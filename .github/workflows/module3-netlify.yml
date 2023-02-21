@@ -19,7 +19,7 @@ jobs:
       - name: Install packages
         run: rm -rf node_modules && yarn install
 
-      - name: Install packages
+      - name: Build module3
         run: yarn nx build module3
 
       - name: Deploy module3 to Netlify
@@ -30,7 +30,7 @@ jobs:
           github-token: ${{ secrets.GITHUB_TOKEN }}
           deploy-message: "Deploy module3 from GitHub Actions"
           enable-pull-request-comment: false
-          enable-commit-comment: true
+          enable-commit-comment: false
           overwrites-pull-request-comment: false
           netlify-config-path: './apps/module3/src/netlify.toml'
         env:
