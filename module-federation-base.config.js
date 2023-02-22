@@ -4,6 +4,7 @@ const coreLibraries = new Set([
   'react',
   'react-dom',
   'react-router-dom',
+  '@auth0/auth0-react',
   'shared-ui',
 ]);
 

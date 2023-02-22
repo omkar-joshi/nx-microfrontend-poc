@@ -1,8 +1,7 @@
 import * as React from 'react';
 
-import { Welcome } from '@genyus-nx-monorepo/shared-ui';
-
 import { Link, Route, Routes } from 'react-router-dom';
+import Home from './home';
 
 const Module3 = React.lazy(() => import('module3/Module'));
 
@@ -30,7 +29,7 @@ export function App() {
         </li>
       </ul>
       <Routes>
-        <Route path="/" element={<Welcome title="container" />} />
+        <Route path="/" element={<Home />} />
         <Route path="/module3" element={<Module3 />} />
 
         <Route path="/module1" element={<Module1 />} />
