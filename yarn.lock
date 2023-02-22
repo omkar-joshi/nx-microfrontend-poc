@@ -2580,6 +2580,13 @@
     "@types/history" "^4.7.11"
     "@types/react" "*"
 
+"@types/react-table@^7.7.14":
+  version "7.7.14"
+  resolved "https://registry.yarnpkg.com/@types/react-table/-/react-table-7.7.14.tgz#b880f1ae140ed065bca2e21b3008ca1ebe71595a"
+  integrity sha512-TYrv7onCiakaG1uAu/UpQ9FojNEt/4/ht87EgJQaEGFoWV606ZLWUZAcUHzMxgc3v1mywP1cDyz3qB4ho3hWOw==
+  dependencies:
+    "@types/react" "*"
+
 "@types/react@*":
   version "18.0.28"
   resolved "https://registry.yarnpkg.com/@types/react/-/react-18.0.28.tgz#accaeb8b86f4908057ad629a26635fe641480065"
@@ -8386,6 +8393,11 @@ react-shallow-renderer@^16.15.0:
     object-assign "^4.1.1"
     react-is "^16.12.0 || ^17.0.0 || ^18.0.0"
 
+react-table@^7.8.0:
+  version "7.8.0"
+  resolved "https://registry.yarnpkg.com/react-table/-/react-table-7.8.0.tgz#07858c01c1718c09f7f1aed7034fcfd7bda907d2"
+  integrity sha512-hNaz4ygkZO4bESeFfnfOft73iBUj8K5oKi1EcSHPAibEydfsX2MyU6Z8KCr3mv3C9Kqqh71U+DhZkFvibbnPbA==
+
 react-test-renderer@18.2.0:
   version "18.2.0"
   resolved "https://registry.yarnpkg.com/react-test-renderer/-/react-test-renderer-18.2.0.tgz#1dd912bd908ff26da5b9fca4fd1c489b9523d37e"
@@ -9744,10 +9756,34 @@ url-parse@^1.5.3:
     querystringify "^2.1.1"
     requires-port "^1.0.0"
 
+urs@^0.0.8:
+  version "0.0.8"
+  resolved "https://registry.yarnpkg.com/urs/-/urs-0.0.8.tgz#8a0e0b792073cdb7eec926d08ab1e017ffab3f66"
+  integrity sha512-LaSSPpr91XrVA3vW2zPupw4K6DSQEDKdL4yQZX1mO2fpljIMpB5zctrjRvxLurelWSgKsHsCmfHNCImscryirQ==
+
+use-http@^1.0.27:
+  version "1.0.27"
+  resolved "https://registry.yarnpkg.com/use-http/-/use-http-1.0.27.tgz#f0acdecebf7dd7f9f3218dc83a68239658b5d452"
+  integrity sha512-R2V3dzkx+YfIi3Sm35njGFRBzPEyM1AODMx6VSyHiyYzVVq2iYbA3HEjGK5fyw66D8stK5iaP4zU3X7LDmuiyg==
+  dependencies:
+    urs "^0.0.8"
+    use-ssr "^1.0.24"
+    utility-types "^3.10.0"
+
+use-ssr@^1.0.24:
+  version "1.0.24"
+  resolved "https://registry.yarnpkg.com/use-ssr/-/use-ssr-1.0.24.tgz#213a3df58f5ab9268e6fe1a57ad0a9de91e514d1"
+  integrity sha512-0MFps7ezL57/3o0yl4CvrHLlp9z20n1rQZV/lSRz7if+TUoM6POU1XdOvEjIgjgKeIhTEye1U0khrIYWCTWw4g==
+
 util-deprecate@^1.0.1, util-deprecate@^1.0.2, util-deprecate@~1.0.1:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/util-deprecate/-/util-deprecate-1.0.2.tgz#450d4dc9fa70de732762fbd2d4a28981419a0ccf"
   integrity sha512-EPD5q1uXyFxJpCrLnCc1nHnq3gOa6DZBocAIiI2TaSCA7VCJ1UJDMagCzIkXNsUYfD1daK//LTEQ8xiIbrHtcw==
+
+utility-types@^3.10.0:
+  version "3.10.0"
+  resolved "https://registry.yarnpkg.com/utility-types/-/utility-types-3.10.0.tgz#ea4148f9a741015f05ed74fd615e1d20e6bed82b"
+  integrity sha512-O11mqxmi7wMKCo6HKFt5AhO4BwY3VV68YU07tgxfz8zJTIxr4BpsezN49Ffwy9j3ZpwwJp4fkRwjRzq3uWE6Rg==
 
 utils-merge@1.0.1:
   version "1.0.1"

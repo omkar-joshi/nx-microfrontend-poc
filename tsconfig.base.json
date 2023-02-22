@@ -15,7 +15,8 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@genyus-nx-monorepo/shared-ui": ["libs/shared-ui/src/index.ts"]
+      "@genyus-nx-monorepo/shared-ui": ["libs/shared-ui/src/index.ts"],
+      "@genyus-nx-monorepo/shared-util": ["libs/shared-util/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]

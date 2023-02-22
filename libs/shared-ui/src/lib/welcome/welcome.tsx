@@ -19,5 +19,3 @@ export function Welcome({ title }: WelcomeProps) {
     </div>
   );
 }
-
-export default Welcome;

@@ -6,6 +6,8 @@ const coreLibraries = new Set([
   'react-router-dom',
   '@auth0/auth0-react',
   'shared-ui',
+  'shared-util',
+  'react-table',
 ]);
 
 module.exports = {
