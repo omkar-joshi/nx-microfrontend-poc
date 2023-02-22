@@ -8,7 +8,7 @@ const Home: React.FC = (): JSX.Element => {
 
   return (
     <>
-      <Welcome title="container" />
+      <Welcome title="container app" />
       {!isAuthenticated && (
         <button onClick={() => loginWithRedirect()}>Log In</button>
       )}
