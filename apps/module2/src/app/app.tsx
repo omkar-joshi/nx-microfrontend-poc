@@ -3,16 +3,16 @@ import { Table, Welcome, Appointment } from '@genyus-nx-monorepo/shared-ui';
 import { useQuery } from '@genyus-nx-monorepo/shared-util';
 import { useMemo } from 'react';
 import { Column } from 'react-table';
+import Container from 'react-bootstrap/Container';
 
 export function App() {
-  const { isAuthenticated, user, logout } = useAuth0();
+  const { user, isLoading } = useAuth0();
   const { data, loading } = useQuery('/appointments');
-  console.log('isauth >>> ', isAuthenticated);
 
   const columns = useMemo<Column<Appointment>[]>(
     () => [
       {
-        Header: 'ID',
+        Header: 'Appointment ID',
         accessor: 'id', // accessor is the "key" in the dat
       },
       {
@@ -33,27 +33,15 @@ export function App() {
   );
   return (
     <>
-      <Welcome title="module2" />
-      {isAuthenticated && (
-        <div>
-          <h2>{user?.name}</h2>
-          <p>{JSON.stringify(user)}</p>
+      <Welcome username={user?.name} title="module2" />
 
-          <button
-            onClick={() =>
-              logout({ logoutParams: { returnTo: window.location.origin } })
-            }
-          >
-            Log Out
-          </button>
-        </div>
-      )}
-
-      {loading ? (
-        <div>Loading...</div>
-      ) : (
-        <Table columns={columns} data={data || []} />
-      )}
+      <Container className="d-flex justify-content-center mt-5">
+        {loading || isLoading ? (
+          <div>Loading...</div>
+        ) : (
+          <Table columns={columns} data={data || []} />
+        )}
+      </Container>
     </>
   );
 }
