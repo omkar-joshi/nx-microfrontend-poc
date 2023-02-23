@@ -8,6 +8,8 @@ const coreLibraries = new Set([
   'shared-ui',
   'shared-util',
   'react-table',
+  'react-bootstrap',
+  'bootstrap',
 ]);
 
 module.exports = {

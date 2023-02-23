@@ -1,18 +1,18 @@
 import './welcome.scss';
 
-/* eslint-disable-next-line */
 export interface WelcomeProps {
+  username?: string;
   title: string;
 }
 
-export function Welcome({ title }: WelcomeProps) {
+export function Welcome({ title, username }: WelcomeProps) {
   return (
     <div className="wrapper">
       <div className="container">
         <div id="welcome">
           <h1>
-            <span> Hello there, </span>
-            Welcome {title} 👋
+            <span> Hello{username ? ` ${username}` : ''}, </span>
+            Welcome to {title} 👋
           </h1>
         </div>
       </div>

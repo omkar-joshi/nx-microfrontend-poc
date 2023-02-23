@@ -1,4 +1,8 @@
 /* You can add global styles to this file, and also import other style files */
-.app {
-  text-decoration: none;
+@import '~bootstrap/scss/bootstrap';
+
+html,
+body,
+#root {
+  height: 100%;
 }
