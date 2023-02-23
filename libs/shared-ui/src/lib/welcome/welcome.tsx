@@ -1,3 +1,4 @@
+import Container from 'react-bootstrap/Container';
 import './welcome.scss';
 
 export interface WelcomeProps {
@@ -7,15 +8,13 @@ export interface WelcomeProps {
 
 export function Welcome({ title, username }: WelcomeProps) {
   return (
-    <div className="wrapper">
-      <div className="container">
-        <div id="welcome">
-          <h1>
-            <span> Hello{username ? ` ${username}` : ''}, </span>
-            Welcome to {title} 👋
-          </h1>
-        </div>
+    <Container className="d-flex justify-content-center">
+      <div id="welcome">
+        <h1>
+          <span> Hello{username ? ` ${username}` : ''}, </span>
+          Welcome to {title} 👋
+        </h1>
       </div>
-    </div>
+    </Container>
   );
 }

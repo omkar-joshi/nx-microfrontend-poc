@@ -1,5 +1,6 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import { useTable } from 'react-table';
+import { Table as BSTable } from 'react-bootstrap';
 
 export interface TableProps {
   data: any;
@@ -28,7 +29,7 @@ export function Table({ data, columns }: TableProps) {
 
   return (
     // apply the table props
-    <table {...getTableProps()}>
+    <BSTable {...getTableProps()} striped bordered hover>
       <thead>
         {
           // Loop over the header rows
@@ -80,7 +81,7 @@ export function Table({ data, columns }: TableProps) {
           })
         }
       </tbody>
-    </table>
+    </BSTable>
   );
 }
 
