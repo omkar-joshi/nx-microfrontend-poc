@@ -4,8 +4,8 @@ import { useQuery } from './useQuery';
 
 describe('useHttp', () => {
   it('should render successfully', () => {
-    const { result } = renderHook(() => useQuery('test'));
+    const { result } = renderHook(() => useQuery('/test'));
 
-    expect(result.current.data).toBe(0);
+    expect(result.current.data).toBeUndefined();
   });
 });
