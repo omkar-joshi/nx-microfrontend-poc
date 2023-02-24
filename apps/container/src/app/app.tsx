@@ -6,7 +6,6 @@ import Navbar from 'react-bootstrap/Navbar';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Button from 'react-bootstrap/Button';
-import Tab from 'react-bootstrap/Tab';
 import { useAuth0 } from '@auth0/auth0-react';
 
 import Home from './home';

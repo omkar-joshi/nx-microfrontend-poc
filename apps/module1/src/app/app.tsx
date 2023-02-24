@@ -3,7 +3,6 @@ import { Table, Welcome, Patient } from '@genyus-nx-monorepo/shared-ui';
 import { useQuery } from '@genyus-nx-monorepo/shared-util';
 import { useMemo } from 'react';
 import Container from 'react-bootstrap/Container';
-import Tab from 'react-bootstrap/Tab';
 import { Column } from 'react-table';
 
 export function App() {
