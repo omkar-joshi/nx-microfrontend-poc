@@ -4,6 +4,7 @@ import { useQuery } from '@genyus-nx-monorepo/shared-util';
 import { useMemo } from 'react';
 import { Column } from 'react-table';
 import Container from 'react-bootstrap/Container';
+import Tab from 'react-bootstrap/Tab';
 
 export function App() {
   const { user, isLoading } = useAuth0();
